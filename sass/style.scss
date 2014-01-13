@@ -1,5 +1,8 @@
 	
 $primary-font : Arial, sans-serif;
+$primary-color : red;
+$secondary-color : blue;
+$extra-color : green;
 	
 	
 	
@@ -10,7 +13,7 @@ $primary-font : Arial, sans-serif;
 		}
 	
 	h1 {
-		border : 1px solid red;
+		border : 1px solid $primary-color;
 		}
 		
 	h2 { 
