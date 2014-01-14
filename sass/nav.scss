@@ -10,9 +10,17 @@
 }
 nav {
 	border: 2px solid yellow;
- @include clearfix;
+ 
 		ul {
 		font-size :30px;
 		@include clearfix;
+		}
+		li {
+		float :left;
+		margin-left: 1em;
+		&:first-child {margin-left :0;}
+		}
+		a{
+		 &:hover { color :$secondary-color;
 		}
 }
