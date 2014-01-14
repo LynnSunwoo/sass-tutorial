@@ -4,8 +4,6 @@ $primary-color : green;
 $secondary-color : blue;
 $extra-color : green;
 	
-	
-	
 	body {
 		padding : 0;
 		margin : 0;
@@ -23,3 +21,6 @@ $extra-color : green;
 	h3 { 
 		border : 1px solid blue;
 		}
+	
+/* main navigation */
+@import 'nav';
