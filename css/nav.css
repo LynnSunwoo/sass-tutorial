@@ -1,1 +1,1 @@
-nav{border:2px solid yellow}nav ul{font-size:30px}nav ul:before,nav ul:after{content:" ";display:table}nav ul:after{clear:both}
+nav{border:2px solid yellow}nav:before,nav:after{content:" ";display:table}nav:after{clear:both}nav ul{font-size:30px}nav ul:before,nav ul:after{content:" ";display:table}nav ul:after{clear:both}
