@@ -1,53 +1,24 @@
 /*
-Syntax error: Undefined variable: "$secondary-color".
-        on line 27 of sass/nav.scss
+Syntax error: Undefined mixin 'border-radius'.
+        on line 15 of sass/nav.scss, in `border-radius'
+        from line 15 of sass/nav.scss
 
-22: 		float :left;
-23: 		margin-left: 1em;
-24: 		/*&:first-child {margin-left :0;}*\/
-25: 		}
-26: 		a{
-27: 		 &:hover { color :$secondary-color;}
-28: 		}
-29: 
-30: 		}
-31: 		}
+10:     clear: both;
+11:   }
+12: }
+13: nav {
+14: 	border: 2px solid yellow;
+15: 	@include border-radius(20px);
+16: 	@media (min-width:$large-screen){
+17: 		ul {
+18: 		font-size :30px;
+19: 		@include clearfix;
+20: 		}
 
 Backtrace:
-sass/nav.scss:27
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/script/variable.rb:49:in `_perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:362:in `visit_media'
+sass/nav.scss:15:in `border-radius'
+sass/nav.scss:15
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -89,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$secondary-color\".\A         on line 27 of sass/nav.scss\A \A 22: 		float :left;\A 23: 		margin-left: 1em;\A 24: 		/*&:first-child {margin-left :0;}*/\A 25: 		}\A 26: 		a{\A 27: 		 &:hover { color :$secondary-color;}\A 28: 		}\A 29: \A 30: 		}\A 31: 		}"; }
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 15 of sass/nav.scss, in `border-radius'\A         from line 15 of sass/nav.scss\A \A 10:     clear: both;\A 11:   }\A 12: }\A 13: nav {\A 14: 	border: 2px solid yellow;\A 15: 	@include border-radius(20px);\A 16: 	@media (min-width:$large-screen){\A 17: 		ul {\A 18: 		font-size :30px;\A 19: 		@include clearfix;\A 20: 		}"; }

@@ -4,13 +4,26 @@ $primary-color : green;
 $secondary-color : blue;
 $extra-color : green;
 
-$large-screen : 45em;
-$small-screen: 20em;
+/* test mixin is used to pump out a red outline around the object */
+@mixin test(){
+ outline: 1px solid red;
+}
+	
+@mixin border-radius($radius){
+	-webkit-border-radius : $radius;
+	-moz-border-radious: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+
+}	
 	
 	body {
 		padding : 0;
 		margin : 0;
 		font-family: $primary-font;
+		width: 800px;
+		@include test;
+		margin: 0 auto;
 		}
 	
 	h1 {

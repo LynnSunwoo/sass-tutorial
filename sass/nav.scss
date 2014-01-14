@@ -12,7 +12,7 @@ $large-screen : 45em;
 }
 nav {
 	border: 2px solid yellow;
- 
+	@include border-radius(20px);
 	@media (min-width:$large-screen){
 		ul {
 		font-size :30px;
@@ -24,7 +24,7 @@ nav {
 		/*&:first-child {margin-left :0;}*/
 		}
 		a{
-		 &:hover { color :$secondary-color;}
+		 &:hover { color : pink;}
 		}
 
 		}
