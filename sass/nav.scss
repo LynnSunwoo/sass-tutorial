@@ -1,3 +1,5 @@
+$large-screen : 45em;
+
 @mixin clearfix {
   &:before,
   &:after {
